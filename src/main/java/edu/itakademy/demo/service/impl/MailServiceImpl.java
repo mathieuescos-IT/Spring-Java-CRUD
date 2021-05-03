@@ -15,8 +15,8 @@ public class MailServiceImpl implements MailService{
 
     public void sendSimpleMessage(Book book) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("itakademytestspring@gmail.com");
-        message.setTo("corenbla@gmail.com");
+        message.setFrom("");
+        message.setTo("");
         message.setSubject("Nouveau livre ajouté : " + book.getName());
         message.setText("Un nouveau livre à été ajouté benks");
         emailSender.send(message);
